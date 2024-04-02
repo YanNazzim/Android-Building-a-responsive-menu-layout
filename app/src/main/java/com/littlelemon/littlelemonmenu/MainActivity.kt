@@ -55,8 +55,9 @@ fun MenuContent(paddingValues: PaddingValues) {
     Surface(modifier = Modifier.padding(paddingValues)) {
         val menuPadding = 16.dp
 		var configuration = LocalConfiguration.current
+		val landscapeMode = configuration.orientation == ORIENTATION_LANDSCAPE
 		when {
-			(configuration.orientation == ORIENTATION_LANDSCAPE) -> {
+			 landscapeMode -> {
 				Column {
 					Row {
 						Text(
