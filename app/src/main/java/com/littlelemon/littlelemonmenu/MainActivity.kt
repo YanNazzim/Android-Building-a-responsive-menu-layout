@@ -59,31 +59,31 @@ fun MenuContent(paddingValues: PaddingValues) {
 		when {
 			 landscapeMode -> {
 				Column {
-					Row {
+					Row(modifier = Modifier.weight(0.5f)) {
 						Text(
 							"Appetizers",
 							modifier = Modifier
 								.weight(0.25f)
 								.background(Purple80)
 								.padding(menuPadding)
-								.fillMaxWidth()
+								.fillMaxHeight()
 						)
 						Text(
 							"Salads",
 							modifier = Modifier
 								.weight(0.25f)
 								.padding(menuPadding)
-								.fillMaxWidth()
+								.fillMaxHeight()
 						)
 					}
-					Row {
+					Row(modifier = Modifier.weight(0.5f)) {
 						Text(
 							"Drinks",
 							modifier = Modifier
 								.weight(0.25f)
 								.background(Pink80)
 								.padding(menuPadding)
-								.fillMaxWidth()
+								.fillMaxHeight()
 						)
 						Text(
 							"Mains",
@@ -91,7 +91,7 @@ fun MenuContent(paddingValues: PaddingValues) {
 								.weight(0.25f)
 								.background(PurpleGrey80)
 								.padding(menuPadding)
-								.fillMaxWidth()
+								.fillMaxHeight()
 						)
 					}
 				}
